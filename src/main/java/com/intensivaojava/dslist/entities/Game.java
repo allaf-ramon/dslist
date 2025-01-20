@@ -12,26 +12,28 @@ public class Game {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String title;
-    @Column(name = "release_year")
+    @Column(name = "game_year")
     private Integer year;
     private String genre;
-    private String platform;
+    private String platforms;
     private double score;
-    private String urlImg;
+    private String imgUrl;
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
 
     public Game() {
     }
 
-    public Game(Long id, String title, Integer year, String genre, String platform, double score, String urlImg, String shortDescription, String longDescription) {
+    public Game(Long id, String title, Integer year, String genre, String platforms, double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
         this.year = year;
         this.genre = genre;
-        this.platform = platform;
+        this.platforms = platforms;
         this.score = score;
-        this.urlImg = urlImg;
+        this.imgUrl = imgUrl;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
     }
@@ -68,12 +70,12 @@ public class Game {
         this.genre = genre;
     }
 
-    public String getPlatform() {
-        return platform;
+    public String getPlatforms() {
+        return platforms;
     }
 
-    public void setPlatform(String platform) {
-        this.platform = platform;
+    public void setPlatforms(String platforms) {
+        this.platforms = platforms;
     }
 
     public double getScore() {
@@ -84,12 +86,12 @@ public class Game {
         this.score = score;
     }
 
-    public String getUrlImg() {
-        return urlImg;
+    public String getImgUrl() {
+        return imgUrl;
     }
 
-    public void setUrlImg(String urlImg) {
-        this.urlImg = urlImg;
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
     }
 
     public String getShortDescription() {
