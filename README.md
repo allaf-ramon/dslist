@@ -2,6 +2,12 @@
 
 DSList é uma aplicação backend desenvolvida em Java utilizando o framework Spring Boot. O objetivo deste projeto é gerenciar listas de jogos, permitindo a criação, leitura e reorganização dos jogos na lista.
 
+## Modelo Conceitual
+
+O modelo conceitual da aplicação é composto pelas seguintes entidades:
+
+![dslist-model](https://github.com/user-attachments/assets/4eb38f58-55fb-4b37-a8ec-25ce3fdaa8f5)
+
 ## Tecnologias Utilizadas
 
 - Java 21
